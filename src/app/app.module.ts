@@ -17,6 +17,9 @@ import { AcercaComponent } from './componentes/acerca/acerca.component';
 import { InformacionComponent } from './componentes/informacion/informacion.component';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,7 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
