@@ -5,20 +5,11 @@
 <h1>Juegos del momento</h1>
 <mat-grid-list cols="4" rowHeight="1:1.5">
     <mat-grid-tile *ngFor="let dest of destacados">
-        <mat-card class="example-card backgroundcard">
-            <mat-card-header>
-                <mat-card-title>{{dest.nombre}}</mat-card-title>
+        <mat-card class="example-card">
+            <mat-card-header style="background-color: black;">
+                <mat-card-title style="font-family: 'PT Sans', sans-serif; font-size: 20px; font-weight: bold;">{{dest.nombre}}</mat-card-title>
             </mat-card-header>
-            <img mat-card-image [src]="dest.img" width="350px">
-            <mat-card-content>
-                <p class="infocards">
-                    ejemplo
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button>Añadir al carrito</button>
-                <button mat-button>Más información</button>
-            </mat-card-actions>
+            <img mat-card-image [src]="dest.img" width="320px">
         </mat-card>
     </mat-grid-tile>
 </mat-grid-list>

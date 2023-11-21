@@ -19,7 +19,7 @@
 }
 
 .mat-toolbar.mat-primary {
-  background-color: #F0F4FA;
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -27,9 +27,13 @@
   color: #1070c8;
 }
 
-
 img{
   padding-right: 8px;
   width: 40px;
   height: 40px;
 }
+
+.lista{
+  background-color: #1070c8;
+}
+
