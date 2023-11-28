@@ -4,13 +4,16 @@
 <br>
 <h1>Juegos del momento</h1>
 <mat-grid-list cols="4" rowHeight="1:1.5">
-    <mat-grid-tile *ngFor="let dest of destacados">
+    <mat-grid-tile *ngFor="let dest of destacados"> <!-- Bloque repetitivo para las cards del inicio, donde se presentan los juegos destacados -->
         <mat-card class="example-card">
             <mat-card-header style="background-color: black;">
-                <mat-card-title style="font-family: 'PT Sans', sans-serif; font-size: 20px; font-weight: bold;">{{dest.nombre}}</mat-card-title>
-                <mat-card-subtitle>{{dest.precio}}</mat-card-subtitle>
+                <mat-card-title style="font-family: 'PT Sans', sans-serif; font-size: 20px; font-weight: bold;">{{dest.nombre}}</mat-card-title> <!-- Recorre nombre por nombre las cards del ts -->
+                <mat-card-subtitle>{{dest.precio}}</mat-card-subtitle> <!-- Recorre precio por precio las cards del ts -->
             </mat-card-header>
             <img mat-card-image [src]="dest.img" width="320px">
+            <mat-card-content>
+                <p>{{dest.plataforma}}</p> <!-- Recorre el tipo de plataforma uno por uno de las cards del ts -->
+            </mat-card-content>
         </mat-card>
     </mat-grid-tile>
 </mat-grid-list>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+p{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
 
 h1{
     text-align: center;
@@ -9,7 +14,7 @@ h1{
 }
 .example-card{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-    background-color: white;
+    background-color: black;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 .example-card:hover {
